@@ -11,10 +11,20 @@ dependencies:
   - matplotlib
   - jupyter
   - ipython
-  # Put any conda dependencies here
+  - jupyterlab
+  - pyyaml
 
+  # Put any conda dependencies here
   - pip:
     # Put any pip dependencies here (and no conda ones anywhere below)
+    - tornado>=5.0  # Required to stop luigi from breaking jupyter
+    - requests
+    - boto3
+    - ratelim
+    - geopandas
+    - altair
+    - vega
+    - vega_datasets
 
   # Tooling requirements (don't edit)
     - tqdm
